@@ -13,12 +13,30 @@
 
 .main {
   font-family: var(--mainFont);
-  display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr, 1fr)); */
-  grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-items: center;
+}
+
+@media (min-width: 56.25em) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 h2 {
   font-size: var(--space-3);
+}
+
+section {
+  display: block;
+}
+
+.random__letter--close, .random__number--close {
+  font-size: var(--space-2);
+}
+
+.hideSection {
+  display: none;
 }

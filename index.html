@@ -11,16 +11,22 @@
   <h1>Recursos para juegos.</h1>
 
   <main class="main">
-    <section class="random__letter">
-      <h2 class="random__letter--title">Dame una letra aleatoria:</h2>
-      <p class="random__letter--result"></p>
-      <button type="button" class="random__letter--btn">Obtener</button>
+    
+    <section class="random__letter--section">
+      <div class="random__letter--close">X</div><div class="random__letter">
+        <h2 class="random__letter--title">Dame una letra aleatoria:</h2>
+        <p class="random__letter--result"></p>
+        <button type="button" class="random__letter--btn">Obtener</button>
+      </div>
     </section>
     
-    <section class="random__number">
-      <h2 class="random__number--title">Dame un número aleatorio entre 0 y 100:</h2>
-      <p class="random__number--result"></p>
-      <button type="button" class="random__number--btn">Obtener</button>
+    <section class="random__number--section">
+      <div class="random__number--close">X</div><div class="random__number">
+        <h2 class="random__number--title">Dame un número aleatorio entre 1 y...:</h2>
+        <input type="number" id="number" placeholder="Añade el número máximo"/>
+        <p class="random__number--result"></p>
+        <button type="button" class="random__number--btn">Obtener</button>
+      </div>
     </section>
   </main>
 
