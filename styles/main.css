@@ -1,0 +1,24 @@
+:root {
+  font-size: 16px;
+
+  --space-1: 0.5rem; /* 8px */
+  --space-2: 1rem;  /* 16px */
+  --space-3: 1.5rem;  /* 24px */
+  --space-4: 2rem;  /* 32px */
+  --space-5: 2.5rem;  /* 40px */
+  --space-6: 3rem;  /* 48px */
+
+  --mainFont: Arial;
+}
+
+.main {
+  font-family: var(--mainFont);
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr, 1fr)); */
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+h2 {
+  font-size: var(--space-3);
+}
