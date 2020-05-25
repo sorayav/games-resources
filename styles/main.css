@@ -15,11 +15,15 @@ body {
   font-family: var(--mainFont);
   box-sizing: border-box;
   letter-spacing: 0.5px;
+  background: rgb(38, 18, 77);
 }
 
 h1 {
   text-align: center;
+  font-size: var(--space-4);
   margin: 50px 0;
+  color: white;
+  text-shadow: 2px 1px rgb(158, 158, 158, 0.6);
 }
 
 .main {
@@ -41,29 +45,34 @@ h2 {
 }
 
 section {
-  /* border: 1px solid red; */
   width: 80%;
   height: 300px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 1px 4px 5px 1px rgb(204, 204, 204, 0.5);
-  padding: 10px;
+  box-shadow: 0.3em 0.3em 0 0 rgb(0, 255, 34),
+    0.3em 0.4em 1.2rem 0.2rem rgba(0, 255, 234,0.5),
+    inset 0.3em 0.3em 0 0 rgb(183, 0, 255);
+  color: white;
+  padding: var(--space-3);
+  position: relative;
 }
 
 .random__letter--section {
-  background-color: rgb(163, 203, 219);
+  /* background-color: rgb(163, 203, 219); */
 }
 
 .random__letter--result, .random__number--result {
   font-size: var(--space-5);
   color: white;
-  text-shadow: 2px 1px rgb(158, 158, 158, 0.6);
+  text-shadow: -2px 0.5px rgb(183, 0, 255),
+  2px 0.5px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s linear;
 }
 
 .random__number--section {
-  background-color: rgb(240, 191, 214);
+  /* background-color: rgb(240, 191, 214); */
 }
 
 #number {
