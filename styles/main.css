@@ -11,11 +11,20 @@
   --mainFont: Arial;
 }
 
-.main {
+body {
   font-family: var(--mainFont);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.main {
   /* grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr, 1fr)); */
   display: grid;
   grid-template-columns: 1fr;
+  gap: 20px;
   justify-items: center;
 }
 
@@ -30,10 +39,51 @@ h2 {
 }
 
 section {
-  display: block;
+  /* border: 1px solid red; */
+  width: 80%;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 1px 4px 5px 1px rgb(204, 204, 204, 0.5);
+}
+
+.random__letter--section {
+  background-color: rgb(163, 203, 219);
+}
+
+.random__letter--result, .random__number--result {
+  font-size: var(--space-5);
+  color: white;
+  text-shadow: 2px 1px rgb(158, 158, 158, 0.6);
+}
+
+.random__number--section {
+  background-color: rgb(240, 191, 214);
+}
+
+#number {
+  font-size: var(--space-3);
+}
+
+input::placeholder {
+  font-size: var(--space-2);
+}
+
+.random__letter, .random__number {
+  text-align: center;
 }
 
 .random__letter--close, .random__number--close {
+  font-size: var(--space-2);
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(214, 214, 214, 0.5);
   font-size: var(--space-2);
 }
 

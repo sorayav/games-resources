@@ -24,10 +24,10 @@ const getRandomNumber = () => {
 randomNumberBtn.addEventListener('click', getRandomNumber);
 
 // Close sections
-const sectionLetters = document.querySelector('.random__letter');
-const closeSectionLetter = () => { sectionLetters.classList.toggle('hideSection'); }
-document.querySelector('.random__letter--close').addEventListener('click', closeSectionLetter);
+// const sectionLetters = document.querySelector('.random__letter');
+// const closeSectionLetter = () => { sectionLetters.classList.toggle('hideSection'); }
+// document.querySelector('.random__letter--close').addEventListener('click', closeSectionLetter);
 
-const sectionNumbers = document.querySelector('.random__number');
-const closeSectionNumber = () => { sectionNumbers.classList.toggle('hideSection'); }
-document.querySelector('.random__number--close').addEventListener('click', closeSectionNumber);
+// const sectionNumbers = document.querySelector('.random__number');
+// const closeSectionNumber = () => { sectionNumbers.classList.toggle('hideSection'); }
+// document.querySelector('.random__number--close').addEventListener('click', closeSectionNumber);
