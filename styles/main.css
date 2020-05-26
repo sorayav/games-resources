@@ -29,17 +29,9 @@ h1 {
   margin: 50px 0;
   color: white;
   text-shadow: 2px 1px rgb(158, 158, 158, 0.6);
-  /* box-shadow: inset 1px 1px 0 0 var(--mainGreen), 1px 1px 0 0 var(--mainPink); */
-  /* border-block-end-width: 2px;
-  border-block-end-style: solid;
-  border-block-end-color: var(--mainPink); */
-  /* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.3, var(--mainPink)), color-stop(0.5, rgba(0, 255, 34,0))); */
   border-bottom: 3px solid transparent;
   border-image: linear-gradient(to right, var(--mainPurple),var(--mainPurple), var(--mainPink), var(--mainGreen), var(--mainPurple), var(--mainPurple));
   border-image-slice: 1;
-  /* animation-name: animate-border;
-  animation-duration: 2s;
-  animation-iteration-count: 1; */
 }
 
 h1:hover{
@@ -47,19 +39,6 @@ h1:hover{
   border-image: linear-gradient(to left, var(--mainPurple), var(--mainPurple), var(--mainPink), var(--mainGreen), var(--mainPurple), var(--mainPurple));
   border-image-slice: 1;
 }
-
-/* @keyframes animate-border {
-  0% {
-    border-bottom: 3px solid transparent;
-    border-image: linear-gradient(to left, var(--mainPurple), var(--mainPink), var(--mainGreen), var(--mainPurple));
-    border-image-slice: 1;
-  }
-  100% {
-    border-bottom: 3px solid transparent;
-  border-image: linear-gradient(to right, var(--mainPurple), var(--mainPink), var(--mainGreen), var(--mainPurple));
-  border-image-slice: 1;
-  }
-} */
 
 .main {
   display: grid;
