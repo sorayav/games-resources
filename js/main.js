@@ -8,6 +8,8 @@ const getRandomLetter = () => {
   const letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   let letter = letters[Math.floor(Math.random() * letters.length)];
   randomLetterResult.innerHTML = letter.toUpperCase();
+  randomLetterResult.classList.add('animation');
+  // randomLetterResult.classList.toggle('move');
 }
 randomLetterBtn.addEventListener('click', getRandomLetter);
 
@@ -20,6 +22,7 @@ const getRandomNumber = () => {
   const inputValue = input.value;
   let randomNumber = Math.ceil(Math.random() * inputValue);
   randomNumberResult.innerHTML = randomNumber;
+  randomNumberResult.classList.add('animation');
 }
 randomNumberBtn.addEventListener('click', getRandomNumber);
 
