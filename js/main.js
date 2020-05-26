@@ -9,7 +9,7 @@ const getRandomLetter = () => {
   let letter = letters[Math.floor(Math.random() * letters.length)];
   randomLetterResult.innerHTML = letter.toUpperCase();
   randomLetterResult.classList.add('animation');
-  // randomLetterResult.classList.toggle('move');
+  setTimeout(() => {randomLetterResult.classList.remove('animation')},1000)
 }
 randomLetterBtn.addEventListener('click', getRandomLetter);
 
@@ -23,6 +23,7 @@ const getRandomNumber = () => {
   let randomNumber = Math.ceil(Math.random() * inputValue);
   randomNumberResult.innerHTML = randomNumber;
   randomNumberResult.classList.add('animation');
+  setTimeout(() => {randomNumberResult.classList.remove('animation')},1000)
 }
 randomNumberBtn.addEventListener('click', getRandomNumber);
 
