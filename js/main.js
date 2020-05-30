@@ -32,8 +32,9 @@ const randomCategoryResult = document.querySelector('.random__category--result')
 const randomCategoryBtn = document.querySelector('.random__category--btn');
 
 const getRandomCategory = () => {
-  const categories = ["Partes del cuerpo", "Huele a...", "Prendas de ropa", "Personajes de dibujos", "Cosas naturalmente verdes", "Marcas y modelos de coches", "Bebidas", "Comidas"];
+  const categories = ["Partes del cuerpo", "Huele a...", "Prendas de ropa", "Personajes de dibujos", "Cosas verdes", "Marcas y modelos de coches", "Bebidas", "Comidas"];
   let category = categories[Math.floor(Math.random() * categories.length)];
+  // let categorySelect = category.split(0,1);
   randomCategoryResult.innerHTML += `<i class="fas fa-check"></i> ${category}</br>`;
   randomCategoryResult.classList.add('animation-category');
   // forEach(element => {setTimeout(() => {element.classList.remove('animation-category')},1000)});
