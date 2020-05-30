@@ -108,7 +108,7 @@ section {
 }
 
 input {
-  width: auto;
+  max-width: 200px;
 }
 
 input::placeholder {
