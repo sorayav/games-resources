@@ -27,6 +27,19 @@ const getRandomNumber = () => {
 }
 randomNumberBtn.addEventListener('click', getRandomNumber);
 
+// Random categories
+const randomCategoryResult = document.querySelector('.random__category--result');
+const randomCategoryBtn = document.querySelector('.random__category--btn');
+
+const getRandomCategory = () => {
+  const categories = ["Partes del cuerpo", "Huele a...", "Prendas de ropa", "Personajes de dibujos", "Cosas naturalmente verdes", "Marcas y modelos de coches", "Bebidas", "Comidas"];
+  let category = categories[Math.floor(Math.random() * categories.length)];
+  randomCategoryResult.innerHTML += `<i class="fas fa-check"></i> ${category}</br>`;
+  // randomCategoryResult.classList.add('animation');
+  // setTimeout(() => {randomLetterResult.classList.remove('animation')},1000)
+}
+randomCategoryBtn.addEventListener('click', getRandomCategory);
+
 // Close sections
 // const sectionLetters = document.querySelector('.random__letter');
 // const closeSectionLetter = () => { sectionLetters.classList.toggle('hideSection'); }
