@@ -100,16 +100,15 @@ section {
   }
 }
 
-.random__number--section {
-  /* background-color: rgb(240, 191, 214); */
-}
-
 #number {
   font-size: var(--space-3);
   background-color: rgb(90, 63, 145);
   border: none;
   color: var(--mainGreen);
-  margin-left: 5px;
+}
+
+input {
+  width: auto;
 }
 
 input::placeholder {
