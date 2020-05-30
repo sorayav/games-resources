@@ -40,6 +40,11 @@ const getRandomCategory = () => {
 }
 randomCategoryBtn.addEventListener('click', getRandomCategory);
 
+const resetCategoryResult = () => {
+  randomCategoryResult.innerHTML = "";
+}
+document.querySelector('.random__category--reset').addEventListener('click', resetCategoryResult);
+
 // Close sections
 // const sectionLetters = document.querySelector('.random__letter');
 // const closeSectionLetter = () => { sectionLetters.classList.toggle('hideSection'); }
